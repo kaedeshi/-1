@@ -1138,6 +1138,25 @@ main .ecore-merit .ecore-merit-content .ecore-merit-title span:nth-child(2) {
   color: #E26D32;
 }
 
+main .ecore-merit .ecore-merit-content .ecore-merit-title .ecore-merit-title-sp {
+  display: none;
+}
+
+main .ecore-merit .ecore-merit-content .ecore-merit-title .ecore-merit-title-sp span:nth-child(2),
+main .ecore-merit .ecore-merit-content .ecore-merit-title .ecore-merit-title-sp span:nth-child(4) {
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #E26D32;
+}
+
+main .ecore-merit .ecore-merit-content .ecore-merit-title .ecore-merit-title-sp span:nth-child(3) {
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #E26D32;
+}
+
 main .ecore-merit .ecore-merit-content .ecore-merit-title img {
   position: absolute;
   top: -20px;
@@ -1778,10 +1797,10 @@ main .ecore-compare .ecore-compare-content .ecore-compare-y {
   margin-top: 40px;
   background: #E26D32;
   color: #FFFFFF;
-  width: 360px;
+  width: 280px;
   padding-top: 50px;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.125rem;
   font-family: "Noto Sans JP", sans-serif;
   margin-inline: auto;
   position: relative;
@@ -1794,7 +1813,7 @@ main .ecore-compare .ecore-compare-content .ecore-compare-y::after {
   left: 50%;
   transform: translateX(-50%);
   background: #E26D32;
-  width: 400px;
+  width: 320px;
   height: 80px;
   clip-path: polygon(0 0,
       100% 0,
@@ -2597,9 +2616,19 @@ main .contact .contact-content .contact-btn:active {
 
 main .contact .contact-content .contact-p {
   margin-top: 40px;
+}
+
+main .contact .contact-content .contact-p p {
   font-size: 1.25rem;
   font-family: Sawarabi Mincho, sans-serif;
   text-align: center;
+}
+
+main .contact .contact-content .contact-p p span {
+  font-size: 1.25rem;
+  font-family: Sawarabi Mincho, sans-serif;
+  text-align: center;
+  white-space: nowrap;
 }
 
 /*=======================================================================
@@ -3342,12 +3371,20 @@ media -merit-
     font-size: 1.25rem;
   }
 
-  main .ecore-merit .ecore-merit-content .ecore-merit-title span:nth-child(1),
-  main .ecore-merit .ecore-merit-content .ecore-merit-title span:nth-child(3) {
+  main .ecore-merit .ecore-merit-content .ecore-merit-title .ecore-merit-title-pc {
+    display: none;
+  }
+
+  main .ecore-merit .ecore-merit-content .ecore-merit-title .ecore-merit-title-sp {
+    display: block;
+  }
+
+  main .ecore-merit .ecore-merit-content .ecore-merit-title .ecore-merit-title-sp span:nth-child(2),
+  main .ecore-merit .ecore-merit-content .ecore-merit-title .ecore-merit-title-sp span:nth-child(4) {
     font-size: 2rem;
   }
 
-  main .ecore-merit .ecore-merit-content .ecore-merit-title span:nth-child(2) {
+  main .ecore-merit .ecore-merit-content .ecore-merit-title .ecore-merit-title-sp span:nth-child(3) {
     font-size: 1.25rem;
   }
 
@@ -3689,17 +3726,17 @@ media -fv-
 =======================================================================*/
 @media screen and (max-width:1000px) {
   main .ecore-fv .fv-comment1 {
-    top: 360px;
-    left: calc(50% - 100px);
+    top: 300px;
+    left: calc(50% - 200px);
   }
 
   main .ecore-fv .fv-comment2 {
-    top: 480px;
+    top: 400px;
     left: calc(50% - 200px);
   }
 
   main .ecore-fv .fv-comment3 {
-    top: 600px;
+    top: 500px;
     left: calc(50% - 100px);
   }
 
@@ -3757,6 +3794,7 @@ media -fv-
 
   main .ecore-fv .fv-img {
     left: calc(50%);
+    display: flex;
   }
 
   main .ecore-fv .fv-img img {
