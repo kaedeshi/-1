@@ -3727,7 +3727,7 @@ media -fv-
 @media screen and (max-width:1000px) {
   main .ecore-fv .fv-comment1 {
     top: 300px;
-    left: calc(50% - 200px);
+    left: calc(50% - 100px);
   }
 
   main .ecore-fv .fv-comment2 {
