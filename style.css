@@ -320,9 +320,10 @@ main .ecore-fv .fv-comment1 div {
       100% 0,
       50% 100%);
   background: #FFFFFF;
-  bottom: -39px;
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: -2;
 }
 
 @keyframes fv-comment1 {
@@ -354,7 +355,7 @@ main .ecore-fv .fv-comment2 {
   text-align: center;
   padding: 12px 0;
   border-radius: 8px;
-  top: 150px;
+  top: 130px;
   left: calc(50% - 660px);
   animation: fv-comment2 2s forwards infinite;
 }
@@ -367,9 +368,10 @@ main .ecore-fv .fv-comment2 div {
       100% 0,
       50% 100%);
   background: #FFFFFF;
-  bottom: -39px;
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: -2;
 }
 
 @keyframes fv-comment2 {
@@ -401,7 +403,7 @@ main .ecore-fv .fv-comment3 {
   text-align: center;
   padding: 12px 0;
   border-radius: 8px;
-  top: 300px;
+  top: 240px;
   left: calc(50% - 420px);
   animation: fv-comment3 2s forwards infinite;
 }
@@ -414,9 +416,10 @@ main .ecore-fv .fv-comment3 div {
       100% 0,
       50% 100%);
   background: #FFFFFF;
-  bottom: -39px;
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: -2;
 }
 
 @keyframes fv-comment3 {
@@ -483,7 +486,7 @@ main .ecore-fv .fv-mainimg1 {
   background-position: -150px -140px;
   background-repeat: no-repeat;
   background-size: 900px 600px;
-  animation: fv-mainimg1 .6s forwards ease-in-out;
+  animation: fv-mainimg1 .6s .2s forwards ease-in-out;
   opacity: 0;
   transform: translateY(400px);
 }
@@ -509,7 +512,7 @@ main .ecore-fv .fv-mainimg2 {
   background-position: -252px -17px;
   background-repeat: no-repeat;
   background-size: 900px 600px;
-  animation: fv-mainimg2 .6s forwards ease-in-out;
+  animation: fv-mainimg2 .6s .2s forwards ease-in-out;
   opacity: 0;
   transform: translateY(-400px);
 }
@@ -535,7 +538,7 @@ main .ecore-fv .fv-mainimg3 {
   background-position: -366px -57px;
   background-repeat: no-repeat;
   background-size: 900px 600px;
-  animation: fv-mainimg3 .6s forwards ease-in-out;
+  animation: fv-mainimg3 .6s .2s forwards ease-in-out;
   opacity: 0;
   transform: translateY(400px);
 }
@@ -561,7 +564,7 @@ main .ecore-fv .fv-mainimg4 {
   background-position: -476px -118px;
   background-repeat: no-repeat;
   background-size: 900px 600px;
-  animation: fv-mainimg4 .6s forwards ease-in-out;
+  animation: fv-mainimg4 .6s .2s forwards ease-in-out;
   opacity: 0;
   transform: translateY(-400px);
 }
@@ -587,7 +590,7 @@ main .ecore-fv .fv-mainimg5 {
   background-position: -586px -6px;
   background-repeat: no-repeat;
   background-size: 900px 600px;
-  animation: fv-mainimg5 .6s forwards ease-in-out;
+  animation: fv-mainimg5 .6s .2s forwards ease-in-out;
   opacity: 0;
   transform: translateY(400px);
 }
@@ -2584,7 +2587,7 @@ main .contact .contact-content .contact-list ul li::before {
 main .contact .contact-content .contact-list ul li {
   position: relative;
   font-size: 1.5rem;
-  font-family: Sawarabi Mincho, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   margin-top: 8px;
 }
 
@@ -2620,13 +2623,13 @@ main .contact .contact-content .contact-p {
 
 main .contact .contact-content .contact-p p {
   font-size: 1.25rem;
-  font-family: Sawarabi Mincho, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   text-align: center;
 }
 
 main .contact .contact-content .contact-p p span {
   font-size: 1.25rem;
-  font-family: Sawarabi Mincho, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   text-align: center;
   white-space: nowrap;
 }
@@ -3726,18 +3729,32 @@ media -fv-
 =======================================================================*/
 @media screen and (max-width:1000px) {
   main .ecore-fv .fv-comment1 {
-    top: 300px;
-    left: calc(50% - 100px);
+    width: 200px;
+    padding: 10px 0;
+    top: 270px;
+    left: calc(50% - 0px);
   }
 
   main .ecore-fv .fv-comment2 {
-    top: 400px;
+    width: 200px;
+    padding: 10px 0;
+    top: 320px;
     left: calc(50% - 200px);
   }
 
   main .ecore-fv .fv-comment3 {
-    top: 500px;
-    left: calc(50% - 100px);
+    width: 200px;
+    padding: 10px 0;
+    top: 370px;
+    left: calc(50% - 0px);
+  }
+
+  main .ecore-fv .fv-comment1 p,
+  main .ecore-fv .fv-comment2 p,
+  main .ecore-fv .fv-comment3 p {
+    font-size: .875rem;
+    font-weight: 800;
+    font-family: Noto Serif JP, sans-serif;
   }
 
   main .ecore-fv .fv-title1 {
@@ -3750,7 +3767,7 @@ media -fv-
     width: 90px;
     height: 460px;
     border-radius: 46px;
-    top: calc(50% - 275px);
+    top: calc(50% - 265px);
     left: calc(50% - 220px);
   }
 
@@ -3758,7 +3775,7 @@ media -fv-
     width: 90px;
     height: 460px;
     border-radius: 46px;
-    top: calc(50% - 400px);
+    top: calc(50% - 390px);
     left: calc(50% - 110px);
   }
 
@@ -3766,7 +3783,7 @@ media -fv-
     width: 90px;
     height: 460px;
     border-radius: 46px;
-    top: calc(50% - 360px);
+    top: calc(50% - 370px);
     left: calc(50%);
   }
 
@@ -3774,7 +3791,7 @@ media -fv-
     width: 90px;
     height: 460px;
     border-radius: 46px;
-    top: calc(50% - 300px);
+    top: calc(50% - 290px);
     left: calc(50% + 110px);
   }
 
@@ -3782,7 +3799,7 @@ media -fv-
     width: 90px;
     height: 460px;
     border-radius: 46px;
-    top: calc(50% - 410px);
+    top: calc(50% - 400px);
     left: calc(50% + 220px);
   }
 
