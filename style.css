@@ -626,7 +626,7 @@ main .ecore-fv .fv-img {
   position: absolute;
   left: calc(50% - 420px);
   transform: translateX(-50%);
-  bottom: 40px;
+  bottom: 20px;
   z-index: 2;
 }
 
@@ -2283,7 +2283,7 @@ main .ecore-flow .ecore-flow-content .ecore-flow-title .ecore-flow-title1 {
   width: 45px;
   height: 1px;
   top: -20px;
-  left: calc(50% - 240px);
+  left: calc(50% - 200px);
   transform: translateX(-50%);
   background: #E26D32;
 }
@@ -2303,7 +2303,7 @@ main .ecore-flow .ecore-flow-content .ecore-flow-title .ecore-flow-title2 {
   width: 45px;
   height: 1px;
   top: 20px;
-  left: calc(50% + 240px);
+  left: calc(50% + 200px);
   transform: translateX(-50%);
   background: #E26D32;
 }
@@ -2831,11 +2831,11 @@ media -flow-
   }
 
   main .ecore-flow .ecore-flow-content .ecore-flow-title .ecore-flow-title1 {
-    left: calc(50% - 190px);
+    left: calc(50% - 160px);
   }
 
   main .ecore-flow .ecore-flow-content .ecore-flow-title .ecore-flow-title2 {
-    left: calc(50% + 190px);
+    left: calc(50% + 160px);
   }
 
   main .ecore-flow .ecore-flow-content dl dt {
@@ -3096,6 +3096,10 @@ media -haccp-
 media -compare-
 =======================================================================*/
 @media screen and (max-width:980px) {
+  main .ecore-compare .ecore-compare-content {
+    padding: 80px 20px;
+  }
+
   main .ecore-compare .ecore-compare-content .ecore-compare-title h2 {
     font-size: 1.25rem;
   }
@@ -3227,7 +3231,7 @@ media -feature-
     width: 20px;
     height: 40px;
     top: 56%;
-    left: 50%;
+    left: calc(50% - 10px);
     transform: translateX(-50%);
   }
 
@@ -3243,6 +3247,12 @@ media -feature-
 
   main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(3) {
     margin-top: 20px;
+    font-size: .875rem;
+  }
+
+  main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(3) span {
+    margin-top: 20px;
+    font-size: .875rem;
   }
 
   main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-img {
@@ -3320,7 +3330,7 @@ media -feature-
     height: 90px;
     rotate: 0deg;
     top: 60%;
-    left: 50%;
+    left: calc(50% - 20px);
     transform: translateX(-50%);
   }
 
@@ -3731,21 +3741,21 @@ media -fv-
   main .ecore-fv .fv-comment1 {
     width: 200px;
     padding: 10px 0;
-    top: 270px;
+    top: 310px;
     left: calc(50% - 0px);
   }
 
   main .ecore-fv .fv-comment2 {
     width: 200px;
     padding: 10px 0;
-    top: 320px;
+    top: 360px;
     left: calc(50% - 200px);
   }
 
   main .ecore-fv .fv-comment3 {
     width: 200px;
     padding: 10px 0;
-    top: 370px;
+    top: 410px;
     left: calc(50% - 0px);
   }
 
