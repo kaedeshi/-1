@@ -1464,14 +1464,14 @@ main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:n
 }
 
 main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(3) {
-  font-size: .875em;
+  font-size: .875rem;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
   text-align: center;
 }
 
 main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(3) span {
-  font-size: .875em;
+  font-size: .875rem;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
   text-align: center;
