@@ -468,7 +468,7 @@ main .ecore-fv .fv-title1 {
 
 @keyframes fv-title1 {
   100% {
-    opacity: .45;
+    opacity: .8;
   }
 }
 
@@ -611,7 +611,7 @@ main .ecore-fv .fv-title2 {
   top: calc(50% - 50px);
   left: calc(50% + 290px);
   translate: -50% -50%;
-  color: #FFDAAE;
+  color: #ff8c00;
   opacity: 0;
   animation: fv-title2 2s 1s forwards;
 }
