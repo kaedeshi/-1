@@ -460,7 +460,7 @@ main .ecore-fv .fv-title1 {
   top: calc(50% - 50px);
   left: calc(50% + 290px);
   translate: -50% -50%;
-  color: #FFFFFF;
+  color: #000000;
   z-index: 4;
   opacity: 0;
   animation: fv-title1 2s 1s forwards;
@@ -468,7 +468,7 @@ main .ecore-fv .fv-title1 {
 
 @keyframes fv-title1 {
   100% {
-    opacity: .8;
+    opacity: .5;
   }
 }
 
@@ -1434,6 +1434,13 @@ main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:n
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
   text-align: center;
+}
+
+main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(1) span {
+  font-size: 2.5rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
 }
 
 main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(2) {
@@ -2597,7 +2604,9 @@ main .contact .contact-content .contact-btn {
   width: 320px;
   font-size: 1.125rem;
   font-family: Sawarabi Mincho, sans-serif;
-  border: 1px solid #111111;
+  /* border: 1px solid #111111; */
+  background: #E26D32;
+  color: #ffffff;
   border-radius: 8px;
   text-align: center;
 }
@@ -3239,6 +3248,10 @@ media -feature-
     font-size: 1.125rem;
   }
 
+  main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(1) span {
+    font-size: 1.125rem;
+  }
+
   main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(2) {
     font-size: 1.25rem;
     margin-top: 20px;
@@ -3247,12 +3260,12 @@ media -feature-
 
   main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(3) {
     margin-top: 20px;
-    font-size: .875rem;
+    font-size: .625rem;
   }
 
   main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(3) span {
-    margin-top: 20px;
-    font-size: .875rem;
+    font-size: .625rem;
+    white-space: nowrap;
   }
 
   main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-img {
@@ -3375,6 +3388,18 @@ media -feature-
     top: 67%;
   }
 }
+
+@media screen and (max-width:500px) {
+  main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-y {
+    rotate: 0deg;
+    width: 7px;
+    height: 15px;
+    top: 58%;
+    left: calc(50% - 10px);
+    transform: translateX(-50%);
+  }
+}
+
 
 /*=======================================================================
 media -merit-
