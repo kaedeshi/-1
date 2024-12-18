@@ -1485,6 +1485,22 @@ main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:n
   white-space: nowrap;
 }
 
+main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(4) {
+  font-size: .75rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  display: none;
+}
+
+main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(4) span {
+  font-size: .75rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+}
+
 main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-img {
   display: flex;
   justify-content: center;
@@ -3259,15 +3275,14 @@ media -feature-
   }
 
   main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(3) {
-    margin-top: 20px;
-    font-size: .625rem;
+    display: none;
   }
 
-  main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(3) span {
-    font-size: .625rem;
-    white-space: nowrap;
+  main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p p:nth-child(4) {
+    display: block;
+    margin-top: 10px;
   }
-
+  
   main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-img {
     transform: translate(0px, 20px);
   }
@@ -3393,8 +3408,8 @@ media -feature-
   main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-y {
     rotate: 0deg;
     width: 7px;
-    height: 15px;
-    top: 58%;
+    height: 20px;
+    top: 59%;
     left: calc(50% - 10px);
     transform: translateX(-50%);
   }
